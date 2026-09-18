@@ -104,13 +104,15 @@ export default function Contact() {
             />
           </div>
 
+          <div className="w-full flex justify-end">
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-dark disabled:opacity-60"
+            className="rounded-full bg-cyan-400/80 text-end px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-cyan-400 disabled:opacity-60"
           >
             {status === "loading" ? "Mengirim..." : "Kirim Pesan"}
           </button>
+          </div>
 
           {status === "success" && (
             <p className="text-sm font-medium text-green-600">
